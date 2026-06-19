@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hola Mundo - Prueba
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Script de prueba que hace console.log en todas las páginas
 // @author       Tu Nombre
 // @match        *://*/*
