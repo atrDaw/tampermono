@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hola Mundo - Prueba
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  Script de prueba que hace console.log en todas las páginas
 // @author       Tu Nombre
 // @match        https://rahhal.vlcia.com/mplus/app/dashboard
@@ -12,7 +12,23 @@
 
 (function() {
     'use strict';
+ $(document).on('keydown', function(e) {
 
-    console.log('hola mundo');
-    console.log('adios mundo');
+        if ($(e.target).is('input, textarea, select, [contenteditable="true"]')) return;
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+
+
+        if (e.key >= '1' && e.key <= '8') {
+            let index = parseInt(e.key) - 1;
+
+
+            let $tabs = $('#tabButtons div').find('label');
+            let $targetTab = $tabs.eq(index);
+
+            if ($targetTab.length) {
+                $targetTab.trigger('click');
+                console.log('Cambiando a pestaña:', index + 1);
+            }
+        }
+    });
 })();
