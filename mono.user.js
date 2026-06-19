@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Hola Mundo - Prueba
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  Script de prueba que hace console.log en todas las páginas
 // @author       Tu Nombre
-// @match        *://*/*
+// @match        https://rahhal.vlcia.com/mplus/app/dashboard
 // @updateURL    https://raw.githubusercontent.com/atrDaw/tampermono/main/mono.user.js
 // @downloadURL  https://raw.githubusercontent.com/atrDaw/tampermono/main/mono.user.js
 // @grant        none
