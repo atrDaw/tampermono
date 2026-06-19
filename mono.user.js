@@ -18,7 +18,7 @@
         if (e.ctrlKey || e.altKey || e.metaKey) return;
 
 
-        if (e.key >= '1' && e.key <= '8') {
+        if (e.key >= '1' && e.key <= '9') {
             let index = parseInt(e.key) - 1;
 
 
