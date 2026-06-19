@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hola Mundo - Prueba
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  Script de prueba que hace console.log en todas las páginas
 // @author       Tu Nombre
 // @match        *://*/*
@@ -14,5 +14,5 @@
     'use strict';
 
     console.log('hola mundo');
-    console.log('hola mundo');
+    console.log('adios mundo');
 })();
