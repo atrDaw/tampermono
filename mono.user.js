@@ -5,8 +5,8 @@
 // @description  Script de prueba que hace console.log en todas las páginas
 // @author       Tu Nombre
 // @match        *://*/*
-// @updateURL    https://raw.githubusercontent.com/TUUSUARIO/TUREPO/main/hola-mundo.user.js
-// @downloadURL  https://raw.githubusercontent.com/TUUSUARIO/TUREPO/main/hola-mundo.user.js
+// @updateURL    https://github.com/atrDaw/tampermono/raw/refs/heads/main/mono.user.js
+// @downloadURL  https://github.com/atrDaw/tampermono/raw/refs/heads/main/mono.user.js
 // @grant        none
 // ==/UserScript==
 
