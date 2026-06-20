@@ -107,7 +107,7 @@
 
   
   document.addEventListener("keydown", (e) => {
-    const key="F6"
+    const key="F3"
     const alt=e.altKey
     console.log(e.key);
     if (e.key === key && alt) {
