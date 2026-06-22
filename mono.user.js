@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Hola Mundo - Prueba
+// @name         Navegacion numérica    
 // @namespace    http://tampermonkey.net/
-// @version      1.7
+// @version      1.8
 // @description  Script de prueba que hace console.log en todas las páginas
 // @author       Tu Nombre
 // @match        https://rahhal.vlcia.com/mplus/app/dashboard
