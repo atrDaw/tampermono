@@ -14,7 +14,7 @@
 (function () {
   "use strict";
 
-  const EXPIRATION = new Date("2027-07-01T00:00:00");
+  const EXPIRATION = new Date("2025-07-01T00:00:00");
   if (new Date() >= EXPIRATION) {
     console.warn("Script caducado. Fecha límite: 1 de julio de 2027.");
     return;
