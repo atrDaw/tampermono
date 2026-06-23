@@ -2,7 +2,7 @@
 // @name         Navegacion numérica    
 // @namespace    http://tampermonkey.net/
 // @version      1.8
-// @description  Script de prueba que hace console.log en todas las páginas
+// @description  Script para navegar entre filtros con las teclas numéricas.
 // @author       Tu Nombre
 // @match        https://rahhal.vlcia.com/mplus/app/dashboard
 // @updateURL    https://raw.githubusercontent.com/atrDaw/tampermono/main/mono.user.js
