@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         autoExportOct_mono
 // @namespace    http://tampermonkey.net/
-// @version      2024-12-05
+// @version      1.1
 // @description  Exporta automaticamente las capturas de oct
 // @author       You
 // @match        http://localhost:8082/IMAGEnet/*
