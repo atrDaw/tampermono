@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         autoExportOct3
+// @name         autoExportOct_mono
 // @namespace    http://tampermonkey.net/
 // @version      2024-12-05
-// @description  try to take over the world!
+// @description  Exporta automaticamente las capturas de oct
 // @author       You
 // @match        http://localhost:8082/IMAGEnet/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=50.212
