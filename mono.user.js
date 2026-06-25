@@ -12,7 +12,7 @@
 
 (function() {
     'use strict';
-
+return;
  $(document).on('keydown', function(e) {
 
         if ($(e.target).is('input, textarea, select, [contenteditable="true"]')) return;
