@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Navegacion numérica    
 // @namespace    http://tampermonkey.net/
-// @version      1.8
+// @version      1.9
 // @description  Script para navegar entre filtros con las teclas numéricas.
 // @author       Tu Nombre
 // @match        https://rahhal.vlcia.com/mplus/app/dashboard
