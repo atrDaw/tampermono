@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         autoExportOct_mono
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  Exporta automaticamente las capturas de oct
 // @author       You
 // @match        http://localhost:8082/IMAGEnet/*
@@ -16,7 +16,7 @@
 
   const EXPIRATION = new Date("2027-07-01T00:00:00");
   if (new Date() >= EXPIRATION) {
-    console.warn("Script caducado. Fecha límite: 1 de julio de 2027.");
+    console.warn("Script expired.");
     return;
   }
 
@@ -113,7 +113,7 @@
 
   
   document.addEventListener("keydown", (e) => {
-    const key="F3"
+    const key="F6"
     const alt=e.altKey
     console.log(e.key);
     if (e.key === key && alt) {
