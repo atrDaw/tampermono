@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         autoExportOct_button
+// @name         autoExportOct_mono
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  Exporta automaticamente las capturas de oct
 // @author       You
 // @match        http://localhost:8082/IMAGEnet/*
@@ -23,6 +23,7 @@
 
   const EXAM_PATH = "/IMAGEnet/Exam";
   const BUTTON_ID = "buttonAutoExport";
+  const ICON_COLOR = "#e76c0c"; // cambia este valor para usar otro color
 
   function delay(ms = 1000) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -151,8 +152,7 @@
     boton.className = "grayButton common";
     boton.title = "Auto Export";
     boton.style.cursor = "pointer";
-    boton.innerHTML =
-      '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20" fill="#5f6368"></polygon></svg>';
+    boton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20" fill="${ICON_COLOR}"></polygon></svg>`;
 
     boton.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -183,4 +183,11 @@
 
   sincronizarBoton();
   setInterval(sincronizarBoton, 1000);
+
+  // --- Atajo alt+F6 (se mantiene como alternativa al botón) ---
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "F6" && e.altKey) {
+      iniciarAutoExport();
+    }
+  });
 })();
