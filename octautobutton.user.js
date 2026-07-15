@@ -23,7 +23,7 @@
 
   const EXAM_PATH = "/IMAGEnet/Exam";
   const BUTTON_ID = "buttonAutoExport";
-  const ICON_COLOR = "#e76c0c"; // cambia este valor para usar otro color
+  const ICON_COLOR = "#e76c0c";
 
   function delay(ms = 1000) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -109,7 +109,6 @@
     await clickMacPap(resultados);
   }
 
-  // --- Botón AutoExport (sustituye al atajo Alt+F6) ---
 
   let procesando = false;
 
@@ -184,7 +183,6 @@
   sincronizarBoton();
   setInterval(sincronizarBoton, 1000);
 
-  // --- Atajo alt+F6 (se mantiene como alternativa al botón) ---
   document.addEventListener("keydown", (e) => {
     if (e.key === "F6" && e.altKey) {
       iniciarAutoExport();
