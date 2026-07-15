@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         autoExportOct_mono
+// @name         autoExportOct_button
 // @namespace    http://tampermonkey.net/
 // @version      1.6
 // @description  Exporta automaticamente las capturas de oct
