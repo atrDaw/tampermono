@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         autoExportOct_button
 // @namespace    http://tampermonkey.net/
-// @version      1.6
+// @version      1.7
 // @description  Exporta automaticamente las capturas de oct
 // @author       You
 // @match        http://localhost:8082/IMAGEnet/*
@@ -146,19 +146,29 @@
   }
 
   function crearBoton() {
-    const boton = document.createElement("div");
-    boton.id = BUTTON_ID;
-    boton.className = "grayButton common";
-    boton.title = "Auto Export";
-    boton.style.cursor = "pointer";
-    boton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20" fill="${ICON_COLOR}"></polygon></svg>`;
+      const boton = document.createElement("div");
+      boton.id = BUTTON_ID;
+      boton.className = "grayButton common";
+      boton.title = "Auto Export";
+      boton.style.cssText = `
+        cursor: pointer;
+        width: 47px;
+        min-width: 24px;
+        height: 33px;
+        min-height: 24px;
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      `;
+      boton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="width:24px;height:24px;flex-shrink:0;display:block;"><polygon points="6,4 20,12 6,20" fill="${ICON_COLOR}"></polygon></svg>`;
 
-    boton.addEventListener("click", (e) => {
-      e.stopPropagation();
-      iniciarAutoExport();
-    });
+      boton.addEventListener("click", (e) => {
+          e.stopPropagation();
+          iniciarAutoExport();
+      });
 
-    return boton;
+      return boton;
   }
 
   function esPaginaExam() {
