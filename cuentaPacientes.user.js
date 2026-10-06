@@ -10,7 +10,8 @@
 // @grant        GM_registerMenuCommand
 // @grant        GM_xmlhttpRequest
 // @grant        unsafeWindow
-// @connect      *.supabase.co
+// @connect      cchqfwjiirezhevzdbbv.supabase.co
+// @connect      supabase.co
 // @run-at       document-idle
 // ==/UserScript==
 
