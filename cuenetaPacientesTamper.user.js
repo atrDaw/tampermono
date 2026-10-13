@@ -25,7 +25,7 @@
       return JSON.parse(dec).trader ?? null;
     };
     const usuario=getUsuario();
-    if (usuario.id!=69)return;
+    if (usuario.id!=31)return;
     document.title+=' +';
   
     // ============================================
@@ -67,7 +67,7 @@
     // ============================================
     // Toast (Cute Alert de la página)
     // ============================================
-    function toast(type, message, timer = 3000) {
+    function toast(type, message, timer = 2000) {
       if (!mostrarToast) return;
       if (typeof unsafeWindow.cuteToast !== "function") return;
       unsafeWindow.cuteToast({ type, message, timer });
