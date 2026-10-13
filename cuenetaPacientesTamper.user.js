@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Guardar paciente en Supabase
+// @name         Contador pacs
 // @namespace    https://tampermonkey.net/
 // @version      1.0
 // @description  Guarda el paciente al pulsar "Guardar" y muestra un toast
