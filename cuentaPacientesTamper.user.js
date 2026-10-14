@@ -26,7 +26,7 @@
     };
     const usuario=getUsuario();
     if (usuario.id!=31)return;
-    document.title+=' +';
+    document.title+=' ✓';
   
     // ============================================
     // CONFIGURACIÓN
@@ -67,7 +67,7 @@
     // ============================================
     // Toast (Cute Alert de la página)
     // ============================================
-    function toast(type, message, timer = 2000) {
+    function toast(type, message, timer = 1500) {
       if (!mostrarToast) return;
       if (typeof unsafeWindow.cuteToast !== "function") return;
       unsafeWindow.cuteToast({ type, message, timer });
